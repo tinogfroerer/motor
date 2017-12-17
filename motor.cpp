@@ -3,7 +3,7 @@
 #include "transformation.h"
 
 #include <iostream>
-#include <libpololu-tic-1/tic.hpp>
+#include <tic.hpp>
 
 using namespace std;
 
@@ -67,6 +67,7 @@ Chuck::Chuck()
 	else
 	{
 		error_flag = true;
+		cout << "There are " << device_count << " devices\n";	
 	}
 
 	/// set up handles for motor_a and motor_b
@@ -197,6 +198,8 @@ void Chuck::from_lin_to_steps(float x, float y, int* steps_a, int* steps_b)
 
 int main()
 {
+	Chuck c;
+	//c.start();
 	return 0;
 }
 

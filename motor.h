@@ -1,7 +1,7 @@
 #pragma once
 
 #include <vector>
-#include <libpololu-tic-1/tic.hpp>
+#include <tic.hpp>
 
 
 // Not implemented
